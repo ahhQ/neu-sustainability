@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Energy - Husky EcoHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="Energy.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="NHusky.png" alt="Northeastern University Logo"></a>
+            <h1 class="husky-ecohub">Husky Ecohub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="waste.html">Waste Management</a></li>
+                <li><a href="Energy.html">Energy Conservation</a></li>
+                <li><a href="#">Partnerships</a></li>
+                <li><a href="#">Initiatives</a></li>
+                <li><a href="#"> <i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Campus Energy</h1>
+                <a href="#" class="cta-button">Learn more about energy conservation</a>
+            </div>
+        </section>
+
+        <div class="energy-container">
+            <h1>Energy Consumption Trend</h1>
+            <div class="snapshot-grid-container">
+                <h2>ENERGY SNAPSHOT</h2>
+                <div class="energy-grid">
+                    <div class="energy-item">
+                        <div class="title">GHG Emission</div>
+                        <div class="number">42%</div>
+                        <div class="description">Decline on the Boston Campus between 2005 and 2021.</div>
+                    </div>
+                    <div class="energy-item">
+                        <div class="title">ISEC</div>
+                        <div class="number">50%</div>
+                        <div class="description">Less energy consumption than a typical research building.</div>
+                    </div>
+                    <div class="energy-item">
+                        <div class="title">RECs</div>
+                        <div class="number">100%</div>
+                        <div class="description">Annual electricity consumption covered through the purchases of
+                            renewable energy certificates.</div>
+                    </div>
+                    <div class="energy-item">
+                        <div class="title">SOLAR</div>
+                        <div class="number">13600</div>
+                        <div class="description">Kilowatt-hours saved annually through the installation of solar units
+                            at Snell Library.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="energy-per-sqft">
+            <h2>ENERGY INTENSITY</h2>
+            <div class="content-wrapper">
+                <div class="chart" id="energyPerSqftChart">
+                    <img src="Energy_sqft.png" alt="Energy per sqft">
+                </div>
+                <div class="insights">
+                    <p>Tracking energy consumption per square foot reveals important insights into our sustainability
+                        progress at Northeastern University.</p>
+                    <div class="key-insights">
+                        <div class="insight-item">
+                            <h3>Economic
+                                <br />Impact
+                            </h3>
+                            <p>Sharp decline during the Great Recession due to cost-saving measures and reduced campus
+                                activities.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h3>Recovery and Fluctuations</h3>
+                            <p>Post-recession increases with noticeable fluctuations due to operational changes, energy
+                                efficiency projects, and seasonal variations.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h3>Continued Improvement</h3>
+                            <p>Recent reduction to 0.19 MMBtu/Sq Ft, indicating ongoing commitment to energy efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="energy-sources">
+            <div class="energy-source-content-wrapper">
+                <div class="energy-source-text-content">
+                    <h2>ENERGY SOURCES BREAKDOWN</h2>
+                    <p>To better understand our overall energy consumption, it is essential to look at the different
+                        energy sources we use. The chart provides a breakdown of our energy use across various sources
+                        throughout the years.
+                    </p>
+                </div>
+                <div class="energy-source-chart-container">
+                    <div class="energy-source-chart" id="energySourcesChart">
+                        <img src="MMBTU Energy.png" alt="Energy source">
+                    </div>
+                    <ul class="energy-source-insights">
+                        <div class="energy-source-insight-item">
+                            <h3>Diesel Fleet:</h3>
+                            <p>Spike followed by decline due to fleet management changes</p>
+                        </div>
+                        <div class="energy-source-insight-item">
+                            <h3>Gasoline Fleet:</h3>
+                            <p>Consistent usage with some fluctuations</p>
+                        </div>
+                        <div class="energy-source-insight-item">
+                            <h3>Distillate Oil:</h3>
+                            <p>Significant drop in usage</p>
+                        </div>
+                        <div class="energy-source-insight-item">
+                            <h3>Natural Gas:</h3>
+                            <p>Slightly increased and stable use</p>
+                        </div>
+                        <div class="energy-source-insight-item">
+                            <h3>Electricity:</h3>
+                            <p> Marked increase, indicating growing electrification</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="ev-charging">
+            <div class="ev-statement">Our commitment to sustainability also includes promoting electric vehicle
+                usage. The following section illustrates the usage of EV charging stations across campus.
+            </div>
+            <div class="ev-content-wrapper">
+                <div class="ev-chart" id="evChargingChart">
+                    <img src="EV Charging.png" alt="ev charging">
+                </div>
+                <div class="ev-insights">
+                    <div class="ev-insight-column">
+                        <h3>Usage Growth</h3>
+                        <p>Steady increase in charging sessions as more EVs are adopted on campus.</p>
+                    </div>
+                    <div class="ev-insight-column">
+                        <h3>Energy Consumption</h3>
+                        <p>Upward trend in total energy consumed by EVs, showing growing reliance on electric
+                            transportation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ghg-emissions-trends">
+            <h2>GHG EMISSIONS TRENDS</h2>
+            <p>Reducing greenhouse gas (GHG) emissions is another key aspect of our energy saving effort.</p>
+            <div class="emissions-chart-container">
+                <div class="emissions-chart" id="emissionsByYearChart">
+                    <img src="GHG Emission by year.png" alt="GHG Emission">
+                </div>
+                <div class="emissions-chart-description">
+                    <p>Tracking our GHG emissions over time is essential to understanding our progress in reducing
+                        our carbon footprint. The chart shows the total GHG emissions in metric tons of CO2
+                        equivalent (MT eCO2) from 2005 to 2022:</p>
+                    <div class="emissions-key-point">
+                        <h4>Continued Reduction</h4>
+                        <p>We've seen a general decrease in GHG emissions, dropping from 76,370 MT eCO2 in 2005 to
+                            54,640 in 2022. Reflecting our continuous efforts to implement efficient
+                            energy practices and reduce our carbon footprint.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="emissions-by-building">
+            <h2>BUILDING PERFORMANCE</h2>
+            <div class="Berdo-content-wrapper">
+                <div class="Berdo-chart" id="emissionsByBuildingChart">
+                    <img src="Building Emission Berdo.png" alt="Berdo">
+                </div>
+                <div class="Berdo-building-insights">
+                    <p>Examining the GHG emissions by building allows us to pinpoint where we can make the most
+                        significant improvements. The chart compares our buildings' performance against Boston's
+                        Building Emissions Reduction and Disclosure Ordinance (BERDO) 2030 goals:</p>
+                    <ul>
+                        <p>Progress Towards Goals: The chart shows how individual buildings are
+                            meeting or exceeding the BERDO 2030 goals, with most buildings already achieving significant
+                            reductions in emissions.</p>
+                        <p>Targeted Improvements: Identifying buildings that lag behind the goals
+                            allows us to prioritize upgrades and retrofits, ensuring all buildings contribute to our
+                            overall emissions reduction targets.</p>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-involved">
+            <h2>Join Our Sustainable Energy Initiatives</h2>
+            <p class="intro">By understanding and optimizing our energy consumption, Northeastern University is advancing towards a more sustainable campus. Achieving our goals relies on the collective efforts of our entire community.
+                <br>
+                <br>
+                Together, we can reduce our energy footprint and foster a greener, more sustainable future.</p>
+
+            <div class="help-grid">
+                <div class="help-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Energy Conservation</h3>
+                    <p>Implement simple habits to save energy, practice energy conservation in our everyday life</p>
+                </div>
+                <div class="help-item">
+                    <i class="fas fa-solar-panel"></i>
+                    <h3>Renewable Energy</h3>
+                    <p>Advocate for and support the use of renewable energy sources including but not limited to solar and wind.</p>
+                </div>
+                <div class="help-item">
+                    <i class="fas fa-plug"></i>
+                    <h3>Energy Efficiency</h3>
+                    <p>Use energy-efficient appliances and methods to reduce consumption.</p>
+                </div>
+                <div class="help-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Energy Monitoring</h3>
+                    <p>Stay informed about your energy use and participate in campus initiatives to track and reduce overall energy consumption.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <nav>
+                    <a href="#">HOME / </a>
+                    <a href="#">PROCESS / </a>
+                    <a href="#">WORK / </a>
+                    <a href="#">FAQS / </a>
+                    <a href="#">ABOUT / </a>
+                    <a href="#">PRIVACY</a>
+                </nav>
+                <p>&copy; 2024 Northeastern University. All Rights Reserved</p>
+                <p>Boston&nbsp&nbsp&nbspArlington&nbsp&nbsp&nbspBurlington&nbsp&nbsp&nbspCharlotte&nbsp&nbsp&nbspLondon&nbsp&nbsp&nbspMiami&nbsp&nbsp&nbspNahant&nbsp&nbsp&nbspOakland&nbsp&nbsp&nbspPortland&nbsp&nbsp&nbspSeattle&nbsp&nbsp&nbspSilicon
+                    Valley&nbsp&nbsp&nbspToronto&nbsp&nbsp&nbspVancouver</p>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/43047cdbbb.js" crossorigin="anonymous"></script>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.querySelectorAll('.energy-item .number').forEach(element => {
+                const finalNumber = parseInt(element.innerText);
+                let currentNumber = 0;
+                const duration = 3000;
+                const steps = 60;
+                const increment = finalNumber / steps;
+                
+                const timer = setInterval(() => {
+                    currentNumber += increment;
+                    if (currentNumber >= finalNumber) {
+                        clearInterval(timer);
+                        currentNumber = finalNumber;
+                    }
+                    element.innerText = Math.round(currentNumber) + (element.innerText.includes('%') ? '%' : '');
+                }, duration / steps);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+
+const energyContainer = document.querySelector('.energy-container');
+if (energyContainer) {
+    observer.observe(energyContainer);
+}
+    </script>
+
+</html>

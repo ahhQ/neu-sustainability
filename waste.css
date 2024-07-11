@@ -1,0 +1,643 @@
+/* Import the specific font styles from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Crimson+Text:wght@400;700&display=swap');
+
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #E5E5E5;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Apply Lato Black 900 to "Husky Ecohub" */
+.husky-ecohub {
+    font-weight: 700 !important;
+    /* Ensure higher specificity with !important */
+    font-family: 'Crimson Text', serif;
+}
+
+/* Apply Lato Bold 700 to subtitles in the focus area */
+.focus-item h2 {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 1rem;
+    position: fixed;
+    /* Make the header fixed */
+    width: 100%;
+    /* Ensure the header takes the full width */
+    top: 0;
+    /* Position it at the top */
+    background-color: #101010;
+    /* Same background color as the page */
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* Added left margin to move logo right */
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Crimson Text', serif;
+    margin-right: 4rem;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.section {
+    margin-bottom: 8rem;
+}
+
+.section-content {
+    padding: 0 8rem;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5E5E5;
+    overflow: hidden;
+    padding: 0 8rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to bottom, #10101019, #101010), url('Waste Main.webp') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.waste-management {
+    position: relative;
+    padding-top: 0;
+    margin: -8rem 7rem 2rem 8rem;
+}
+
+.waste-management h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: .03rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.waste-management h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.waste-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.waste-chart {
+    width: 80%;
+    order: 2;
+}
+
+.waste-chart img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stat {
+    width: 35%;
+    order: 1;
+}
+
+.stat h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 0rem;
+    margin-bottom: 0;
+}
+
+.stat h4 {
+    font-size: 4rem;
+    margin-top: -3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.stat p {
+    margin-top: -4rem;
+    font-size: 1rem;
+}
+
+.waste-total {
+    width: 100%;
+}
+
+.waste-total img {
+    float: left;
+    margin-right: 6rem;
+    max-width: 45%;
+    height: auto;
+}
+
+.waste-total p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.single-stream {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 4rem 1rem 2rem;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 6rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.single-stream-label {
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.single-stream-label-2 {
+    margin-top: -6rem;
+    margin-left: 1rem;
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.single-stream-text {
+    font-family: 'Lato', sans-serif;
+    margin-top: 0rem;
+    font-size: 1.2rem;
+}
+
+.single-stream img {
+    margin-top: 1rem;
+    max-width: 77%;
+    height: auto;
+}
+
+.single-stream-number {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.animate-section {
+    transform: translateX(100%);
+    transition: transform 1s ease-out;
+    opacity: 0;
+}
+
+.animate-section.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.food-waste {
+    position: relative;
+    overflow: hidden;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 2s ease, opacity 2s ease;
+}
+
+.food-waste.animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.food-waste-header {
+    position: relative;
+    padding: 4rem 8rem;
+    margin-bottom: 2rem;
+}
+
+.food-waste-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 92%;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 100%),
+        url('Food.webp') no-repeat center center/cover;
+    z-index: -1;
+}
+
+.food-waste-label {
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    color: #E5E5E5;
+}
+
+.food-waste-text {
+    color: #E5E5E5;
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    max-width: 50%;
+}
+
+.food-waste-content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 8rem;
+}
+
+.food-waste-chart {
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.simple-bar-chart {
+    --line-count: 10;
+    --line-color: #E5E5E5;
+    --line-opacity: 0.25;
+    --item-gap: 2%;
+    --item-default-color: #101010;
+
+    height: 60px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--item-gap);
+    align-items: end;
+    padding-inline: var(--item-gap);
+    --padding-block: 2rem;
+    /*space for labels*/
+    padding-block: var(--padding-block);
+    position: relative;
+    isolation: isolate;
+    background-color: #10101019;
+    border-radius: 10px;
+}
+
+.simple-bar-chart::after {
+    content: "";
+    position: absolute;
+    inset: var(--padding-block) 0;
+    z-index: -1;
+    --line-width: 1px;
+    --line-spacing: calc(100% / var(--line-count));
+    background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+    box-shadow: 0 var(--line-width) 0 var(--line-color);
+    opacity: var(--line-opacity);
+}
+
+.simple-bar-chart>.item {
+    height: calc(1% * var(--val));
+    background-color: var(--clr, var(--item-default-color));
+    position: relative;
+    animation: item-height 20s ease forwards;
+}
+
+@keyframes item-height {
+    from {
+        height: 0
+    }
+}
+
+.simple-bar-chart>.item>* {
+    position: absolute;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    color: #E5E5E5;
+}
+
+.simple-bar-chart>.item>.label {
+    inset: 100% 0 auto 0;
+    padding-top: 0.5rem;
+}
+
+.simple-bar-chart>.item>.value {
+    inset: auto 0 100% 0;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.food-waste-explained p {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+/* Simplified and modernized location-waste section */
+
+.location-waste {
+    margin: 4rem 8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 4rem;
+}
+
+.location-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+}
+
+.location-item {
+    position: relative;
+    width: 22%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.location-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: brightness(0.5);
+    transition: filter 0.3s ease;
+}
+
+.location-item img:hover {
+    filter: brightness(0.9);
+}
+
+.location-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #E5E5E5;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    width: 90%;
+}
+
+.location-breakdown {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    color: #E5E5E5;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.location-intro {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #E5E5E5;
+}
+
+.location-waste-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.location-waste-image {
+    width: 70%; 
+    margin: 0 auto; 
+    text-align: center;  
+    margin-bottom: 3rem;
+}
+
+.location-waste-image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.location-waste-explanation {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color: #E5E5E5;
+    max-width: 800px;
+    text-align: center;
+}
+
+.location-waste-explanation p {
+    margin-bottom: 1rem;
+}
+
+.get-involved {
+    background: #101010;
+    padding: 0rem 8rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.get-involved h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #E5E5E5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved .intro {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 6rem;
+    color: #E5E5E5;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.help-item {
+    background: rgba(124, 124, 124, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.help-item i {
+    font-size: 2.5rem;
+    color: #62c669;
+    margin-bottom: 1rem;
+}
+
+.help-item h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #E5E5E5;
+}
+
+.help-item p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.closing-statement {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #E5E5E5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.049);
+    color: #E5E5E5;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #101010;
+}
+
+footer {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 3rem 8rem 4rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    margin-right: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+footer nav {
+    margin-bottom: 1.5rem;
+}
+
+footer nav a {
+    color: #E5E5E5;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-right {
+    margin-top: 4.2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.social-icon {
+    color: #E5E5E5;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #E5E5E5;
+}

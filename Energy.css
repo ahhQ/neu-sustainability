@@ -1,0 +1,807 @@
+/* Import the specific font styles from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400&family=Crimson+Text:wght@400;700&display=swap');
+
+body {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: #E5E5E5;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Apply Lato Black 900 to "Husky Ecohub" */
+.husky-ecohub {
+    font-weight: 700 !important;
+    /* Ensure higher specificity with !important */
+    font-family: 'Crimson Text', serif;
+}
+
+/* Apply Lato Bold 700 to subtitles in the focus area */
+.focus-item h2 {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 1rem;
+    position: fixed;
+    /* Make the header fixed */
+    width: 100%;
+    /* Ensure the header takes the full width */
+    top: 0;
+    /* Position it at the top */
+    background-color: #101010;
+    /* Same background color as the page */
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    /* Added left margin to move logo right */
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Crimson Text', serif;
+    margin-right: 4rem;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E5E5E5;
+    overflow: hidden;
+    padding: 0 8rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(to bottom, #10101019, #101010), url('Energy.jpeg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.049);
+    color: #E5E5E5;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #101010;
+}
+
+.energy-container {
+    position: relative;
+    padding-top: 0;
+    margin: -7.8rem 7rem 2rem 8rem;
+}
+
+.energy-container h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: .5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.energy-container h2 {
+    font-size: 4rem;
+    max-width: 2rem;
+    line-height: 4.5rem;
+}
+
+.energy-item {
+    margin-bottom: 4rem;
+}
+
+.number {
+    font-size: 4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: 'Crimson Text', serif;
+}
+
+.snapshot-grid-container {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.snapshot-grid-container h2 {
+    margin-right: 30rem;
+    margin-top: 1.5rem;
+}
+
+.energy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 2rem;
+    margin-bottom: -.5rem;
+}
+
+.energy-per-sqft {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 1rem 8rem;
+}
+
+.energy-per-sqft h2 {
+    color: #E5E5E5;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 4rem;
+}
+
+.chart {
+    flex: 1;
+}
+
+.chart img {
+    width: 100%;
+    height: auto;
+}
+
+.insights {
+    flex: 1;
+}
+
+.insights p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    margin-top: -6.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.key-insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.insight-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.insight-item h3 {
+    color: #E5E5E5;
+    font-size: 1.5rem;
+}
+
+.insight-item p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+    .energy-per-sqft {
+        padding: 2rem 4rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .key-insights {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .energy-per-sqft {
+        padding: 2rem 2rem;
+    }
+}
+
+.energy-sources {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 4rem 8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.energy-sources .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.energy-sources h2 {
+    color: #E5E5E5;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.energy-sources p {
+    font-size: 1.2rem;
+    max-width: 60rem;
+}
+
+.energy-source-chart-container {
+    margin-top: 4rem;
+}
+
+.energy-source-chart img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.energy-source-insights {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+    margin-left: -2.5rem;
+}
+
+.energy-source-insight-item {
+    color: #E5E5E5;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.energy-source-insight-item:last-child {
+    margin-left: -.7rem;
+}
+
+.energy-source-insight-item:nth-last-child(2) {
+    margin-left: -.5rem;
+}
+
+.energy-source-insight-item:nth-last-child(3) {
+    margin-left: -.2rem;
+}
+
+.energy-source-insight-item:nth-last-child(4) {
+    margin-left: 1rem;
+}
+
+.energy-source-insight-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: -.5rem;
+}
+
+.energy-source-insight-item p {
+    font-size: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+
+@media (max-width: 1200px) {
+    .energy-sources {
+        padding: 3rem 4rem;
+    }
+
+    .energy-source-chart-container {
+        flex-direction: column;
+    }
+
+    .energy-source-insights {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .energy-sources {
+        padding: 2rem 2rem;
+    }
+
+    .energy-sources h2 {
+        font-size: 2rem;
+    }
+}
+
+.ev-statement {
+    font-size: 2.5rem;
+}
+
+.ev-charging {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 4rem 8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.ev-charging p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.ev-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ev-chart {
+    margin-top: 4rem;
+    width: 100%;
+    max-height: auto;
+    overflow: hidden;
+}
+
+.ev-chart img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ev-insights {
+    display: flex;
+    gap: 2rem;
+}
+
+.ev-insight-column {
+    flex: 1;
+    background-color: #101010;
+    padding: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ev-insight-column h3 {
+    color: #E5E5E5;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+.ev-insight-column p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media (max-width: 1024px) {
+    .ev-charging {
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ev-charging {
+        padding: 2rem;
+    }
+
+    .ev-charging h2 {
+        font-size: 2rem;
+    }
+
+    .ev-insights {
+        flex-direction: column;
+    }
+}
+
+.ghg-emissions-trends {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 4rem 8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.ghg-emissions-trends h2 {
+    color: #E5E5E5;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.ghg-emissions-trends > p {
+    font-size: 1.2rem;
+    margin: 0 auto 2rem;
+    max-width: 800px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.emissions-chart {
+    width: 100%;
+}
+
+.emissions-chart img {
+    width: 100%;
+    height: auto;
+}
+
+.emissions-chart-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.emissions-chart-description p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.emissions-key-point {
+    padding: 1.5rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.emissions-key-point h4 {
+    color: #E5E5E5;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: .5rem;
+}
+
+.emissions-key-point p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    .ghg-emissions-trends {
+        padding: 3rem 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .emissions-by-year {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .ghg-emissions-trends {
+        padding: 2rem;
+    }
+
+    .ghg-emissions-trends h2 {
+        font-size: 2rem;
+    }
+
+    .emissions-by-year h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.emissions-by-building {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 2rem 8rem;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -6rem;
+}
+
+.emissions-by-building h2 {
+    color: #E5E5E5;
+    margin-left: 4rem;
+    font-size: 4rem;
+    margin-bottom: -9rem;
+    text-align: left;
+}
+
+.Berdo-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Berdo-chart {
+    width: 100%;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.Berdo-chart:hover {
+    transform: scale(1.02);
+}
+
+.Berdo-chart img {
+    width: 150%;
+    height: auto;
+    margin-left: 0rem;
+}
+
+.Berdo-building-insights {
+    padding: 2rem;
+    margin-left: 16rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 1000px;
+}
+
+.Berdo-building-insights p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Berdo-building-insights ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Berdo-building-insights ul p {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    .emissions-by-building {
+        padding: 6rem 4rem;
+    }
+
+    .Berdo-content-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4rem;
+    }
+
+    .Berdo-chart {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .Berdo-building-insights {
+        flex: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Berdo-chart, .Berdo-building-insights {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.get-involved {
+    background: #101010;
+    padding: 0rem 8rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.get-involved h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #E5E5E5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.get-involved .intro {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 6rem;
+    color: #E5E5E5;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.help-item {
+    background: rgba(124, 124, 124, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.help-item i {
+    font-size: 2.5rem;
+    color: #62c669;
+    margin-bottom: 1rem;
+}
+
+.help-item h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #E5E5E5;
+}
+
+.help-item p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.closing-statement {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: #E5E5E5;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.049);
+    color: #E5E5E5;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background: rgba(255, 255, 255);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #101010;
+}
+
+footer {
+    background-color: #101010;
+    color: #E5E5E5;
+    padding: 3rem 8rem 4rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'Lato', sans-serif;
+    margin-right: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+footer nav {
+    margin-bottom: 1.5rem;
+}
+
+footer nav a {
+    color: #E5E5E5;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.footer-right {
+    margin-top: 4.2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.social-icon {
+    color: #E5E5E5;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #E5E5E5;
+}
