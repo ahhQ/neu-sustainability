@@ -189,6 +189,7 @@ nav ul li a {
 }
 
 .waste-total img {
+    margin-top: 1rem;
     float: left;
     margin-right: 6rem;
     max-width: 45%;
@@ -556,7 +557,7 @@ nav ul li a {
 }
 
 .help-item p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Crimson Text', serif;
     font-size: 1rem;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.8);
@@ -576,7 +577,7 @@ nav ul li a {
     background: rgba(255, 255, 255, 0.049);
     color: #E5E5E5;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Crimson Text', serif;
     font-weight: 400;
     font-size: 1rem;
     border-radius: 30px;
