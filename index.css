@@ -117,7 +117,7 @@ nav ul li a {
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.1));
     /* Faded gradient */
     color: inherit;
-    opacity: 0.08;
+    opacity: 0.05;
     /* More faded opacity */
     pointer-events: none;
     line-height: 1;
@@ -161,25 +161,8 @@ nav ul li a {
 
 .focus-item p {
     line-height: 1.8;
-    font-family: 'Crimson Text', serif;
-}
-
-.icon-arrow {
-    position: absolute;
-    bottom: 2rem;
-    left: 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #E5E5E5;
-}
-
-.read-more {
-    display: block;
-    margin: 0rem 0 2rem 8rem;
-    color: #E5E5E5;
-    text-decoration: none;
     font-family: 'Lato', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .read-more .text {
@@ -306,8 +289,8 @@ nav ul li a {
     color: #E5E5E5;
     text-decoration: none;
     font-weight: 400;
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-family: 'Crimson Text', serif;;
 }
 
 .view-news .text {
@@ -353,8 +336,8 @@ nav ul li a {
     color: #E5E5E5;
     text-decoration: none;
     margin-top: 1rem;
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-family: 'Crimson Text', serif;
 }
 
 .get-involved .text{
@@ -449,7 +432,7 @@ footer p {
 }
 
 .round {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -503,5 +486,3 @@ footer p {
     animation-iteration-count:infinite;
     animation-timing-function:linear;
 }
-
-
